@@ -11,3 +11,4 @@ You have to use try: / except:
 You are not allowed to import any module
 You are not allowed to use len()
 
+1. 1-safe_print_integer.py
