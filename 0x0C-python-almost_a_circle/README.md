@@ -25,4 +25,18 @@ if id is not None, assign the public instance attribute id with this argument va
 otherwise, increment __nb_objects and assign the new value to the public instance attribute id
 This class will be the “base” of all other classes in this project. The goal of it is to manage id attribute in all your future classes and to avoid duplicating the same code (by extension, same bugs)
 
+2. Write the class Rectangle that inherits from Base:
 
+In the file models/rectangle.py
+Class Rectangle inherits from Base
+Private instance attributes, each with its own public getter and setter:
+__width -> width
+__height -> height
+__x -> x
+__y -> y
+Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
+Call the super class with id - this super call with use the logic of the __init__ of the Base class
+Assign each argument width, height, x and y to the right attribute
+Why private attributes with getter/setter? Why not directly public attribute?
+
+Because we want to protect attributes of our class. With a setter, you are able to validate what a developer is trying to assign to a variable. So after, in your class you can “trust” these attributes.
