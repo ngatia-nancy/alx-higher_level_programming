@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-'''
+"""
 script that fetches https://alx-intranet.hbtn.io/status
-It uses urllib package
-'''
+it uses urllib package
+"""
 from urllib.request import Request, urlopen
 
 if __name__ == '__main__':
