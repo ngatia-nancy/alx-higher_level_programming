@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-script that fetches https://alx-intranet.hbtn.io/status
-it uses urllib package
+"""script that fetches https://alx-intranet.hbtn.io/status
+   it uses urllib package
 """
 from urllib.request import Request, urlopen
 
