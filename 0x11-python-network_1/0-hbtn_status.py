@@ -2,13 +2,13 @@
 """script that fetches https://alx-intranet.hbtn.io/status
    it uses urllib package
 """
-from urllib.request import Request, urlopen
+import urllib.request
 
 if __name__ == '__main__':
 
 
-  req = Request('https://alx-intranet.hbtn.io/status')
-  with urlopen(req) as response:
+  req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
+  with urllib.request. urlopen(req) as response:
     page = response.read()
 
     print('Body response: ')
